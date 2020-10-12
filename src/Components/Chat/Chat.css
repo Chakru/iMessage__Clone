@@ -1,7 +1,7 @@
 .chat {
   display: flex;
   flex-direction: column;
-  flex: 0.8;
+  flex: 0.7;
   height: 100vh;
   background-color: #ffffff;
 }
@@ -48,4 +48,16 @@
 
 .chat__message {
   flex: 1;
+  overflow: scroll;
+}
+
+/* For Chrome, Safari and Opera */
+.chat__message::-webkit-scrollbar {
+  display: none;
+}
+
+/* For Chrome, Safari and Opera */
+.chat__message {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
